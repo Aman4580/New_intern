@@ -1,0 +1,156 @@
+body {
+background-color: white;
+margin: 0;
+padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0.8, 0.8, 0.8, 8); /* Add shadow */
+}
+
+/* .dark.navbar {
+  background-color: #121212;
+} */
+
+.navbar.dark {
+  background-color: #121212;
+}
+body.dark {
+  background-color: #121212;
+  color: #fff; /* Text color */
+}
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-buttons button {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: inherit;
+}
+
+.navbar-buttons .signup-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.navbar-buttons .signin-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.navbar-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-buttons button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+
+.signup-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.signup-modal h2 {
+  margin-bottom: 20px;
+}
+
+.signup-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-modal input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* signup css */
+
+.signup-modal button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-modal button:hover {
+  background-color: #0056b3;
+}
+
+/* sinin css */
+
+.signin-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.signin-modal h2 {
+  margin-bottom: 20px;
+}
+
+.signin-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-modal input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signin-modal button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-modal button:hover {
+  background-color: #0056b3;
+}
